@@ -1,0 +1,932 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(../images/roberto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+header h1 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3em;
+    margin: 10% 0 0 8%;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000
+}
+
+header p {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1em;
+    margin: -2% 0 -17% 9%;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000
+}
+
+.overlay {
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    transition: .5s
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%
+}
+
+.overlay a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #818181;
+    display: block;
+    transition: .4s;
+    margin: 10% 0 0 0
+}
+
+.overlay a:focus,
+.overlay a:hover {
+    color: #0a60d1;
+    background-color: #000
+}
+
+.overlay .closebtn {
+    position: absolute;
+    font-size: 3em;
+    margin: 0
+}
+
+@media screen and (max-height:450px) {
+    .overlay a {
+        font-size: 1.5em
+    }
+    .overlay .closebtn {
+        font-size: 3em;
+        top: 5%;
+        right: 5%
+    }
+}
+
+header span {
+    margin: 0 0 0 85%;
+    color: #fff
+}
+
+header h2 {
+    font-weight: lighter;
+    font-size: 2em;
+    font-family: Tekton Pro;
+    text-align: center;
+    margin: 25% 0 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000
+}
+
+header h3 {
+    font-weight: lighter;
+    font-size: 1em;
+    font-family: Tekton Pro;
+    text-align: center;
+    margin: 5% 0 0 0;
+    text-transform: uppercase;
+    color: #fff
+}
+
+header form input {
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: corbel;
+    background-color: #207ef9;
+    border: 1px solid #0a60d1;
+    margin: 10% 0 0 17%
+}
+
+header form #btn:hover {
+    transition: 1s;
+    background-color: #fff;
+    color: #0a60d1;
+    transform: translateY(-10px);
+    border: 1px solid #0a60d1
+}
+
+header form #button {
+    padding: 10px 15px 10px 15px;
+    margin: 5% 0 10% 31%
+}
+
+header form #button:hover {
+    transition: 1s;
+    background-color: #fff;
+    color: #0a60d1;
+    border: 1px solid #0a60d1;
+    transform: translateY(-10px)
+}
+
+main #whitebox {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgb(4 1 1 / 10%), rgb(221 210 206)), url(../images/imgbg2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+main #whitebox h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Corinthia', cursive;
+    margin: 5% 0 0 0;
+    text-shadow: 2px 2px 3px rgb(26, 23, 23)
+}
+
+main #whitebox div {
+    width: 100%;
+    height: 20em;
+    margin: 5% 0 0 0
+}
+
+#whitebox div img {
+    width: 100%;
+    margin: 5% 0 0 0
+}
+
+#whitebox div img:hover {
+    transition: 1s;
+    background: rgba(0, 0, 0, .2);
+    transform: translateY(-20px);
+    box-shadow: 0 0 10px #000
+}
+
+#whitebox div h5 {
+    font-size: 1.2em;
+    font-family: 'Corinthia', cursive;
+    margin: 5% 0 0 2%
+}
+
+#whitebox div h6 {
+    color: #1c1818;
+    font-size: 1.2em;
+    font-family: vijaya;
+    margin: -8% 0 0 70%
+}
+
+main #middle {
+    width: 100%;
+    padding: 10px
+}
+
+#middle h2 {
+    text-align: center;
+    margin: 5% 0 0 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #000;
+    font-family: 'Corinthia', cursive;
+}
+
+#middle article p {
+    text-align: justify;
+    font-size: 1em;
+    font-family: corbel;
+    margin: 5% 0 0 0;
+    color: #473e3e
+}
+
+#slider {
+    width: 100%;
+    padding: 10px
+}
+
+#slider img {
+    width: 100%;
+    height: 15em
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    margin: -10% 0 10% 0;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 100%;
+    display: inline-block;
+    transition: background-color .6s ease;
+    border: 1px solid #000
+}
+
+.active {
+    background-color: rgba(225, 225, 225, .8)
+}
+
+#greybox {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(232, 226, 226, .9), rgba(232, 226, 226, .6)), url(../images/imgbg.jpg)
+}
+
+#greybox h2 {
+    text-align: center;
+    margin: 20% 0 0 0;
+    font-size: 2em;
+    font-family: 'Corinthia', cursive;
+    text-shadow: 2px 2px 3px #000
+}
+
+#greybox p {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: corbel;
+    margin: 10% 0 0 0
+}
+
+#greybox div {
+    width: 100%;
+    height: 25em;
+    margin: 10% 0 0 0
+}
+
+#greybox div img {
+    width: 100%;
+    height: 15em;
+    margin: 0
+}
+
+#greybox div h3 {
+    text-align: center;
+    margin: 10% 0 0 0;
+    font-family: corbel
+}
+
+#greybox div h4 {
+    text-align: center;
+    margin: 5% 0 0 0;
+    font-family: corbel
+}
+
+#contact {
+    padding: 10px
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 10% 0 0 0;
+    font-size: 2em;
+    font-family: 'Corinthia', cursive;
+    text-shadow: 2px 2px 3px #000
+}
+
+#contact div {
+    width: 100%;
+    margin: 5% 0 0 0
+}
+
+#contact div img {
+    width: 10em;
+    height: 10em;
+    padding: 10px;
+    border-radius: 100%;
+    margin: 10% 0 0 26%
+}
+
+#contact div p {
+    text-align: center;
+    margin: 10% 0 0 0;
+    font-size: 1em;
+    font-style: italic;
+    font-family: corbel
+}
+
+#contact div h6 {
+    text-align: center;
+    margin: 10% 0 10% 0;
+    font-size: 1em;
+    font-family: corbel;
+    color: #473e3e
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f0d0d
+}
+
+footer #list ul {
+    margin: 10% 0 0 7%
+}
+
+footer #list ul li {
+    margin: 4% 0 0 0;
+    color: #837e7e;
+    font-family: corbel;
+    list-style-type: none
+}
+
+footer #Unorder ul {
+    margin: -50% 0 0 65%
+}
+
+footer #Unorder ul li {
+    margin: 11% 0 0 0;
+    color: #837e7e;
+    list-style-type: none
+}
+
+footer div h3 {
+    margin: 20% 0 0 0;
+    color: #fff;
+    font-family: corbel;
+    text-align: center
+}
+
+footer div p {
+    margin: 5% 0 0 0;
+    color: grey;
+    font-family: corbel;
+    text-align: center
+}
+
+footer h4 {
+    text-align: center;
+    color: #fff;
+    font-family: corbel;
+    margin: 10% 0 0 0
+}
+
+footer form input[type=Email] {
+    padding: 10px 20px;
+    margin: 10% 0 10% 18%;
+    background: 0 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    border-bottom: 1px solid #fff
+}
+
+footer form input[type=image] {
+    margin: 4% 0 0 -10%
+}
+
+footer article p {
+    text-align: center;
+    color: #fff;
+    font-family: corbel;
+    margin: 10% 0 0 0
+}
+
+footer #icon {
+    margin: 10% 0 0 26%
+}
+
+footer #icon li {
+    margin: 0 0 0 5%;
+    font-family: corbel;
+    list-style-type: none;
+    display: inline-block
+}
+
+footer ul li img {
+    width: 30px;
+    height: 30px
+}
+
+footer ul li img:hover {
+    background-color: #0a60d1;
+    border-radius: 5px
+}
+
+footer h5 {
+    text-align: center;
+    color: #fff;
+    font-family: Cooper Std;
+    font-size: 1em;
+    margin: 10% 0 10% 0
+}
+
+footer h5 span {
+    color: #0a60d1;
+    margin: 0
+}
+
+@media only screen and (min-width:375px) {
+    header form input {
+        margin: 10% 0 0 23%
+    }
+    header form #button {
+        margin: 5% 0 10% 35%
+    }
+    #whitebox div h6 {
+        margin: -7% 0 0 73%
+    }
+    #contact div {
+        width: 100%;
+        margin: 5% 0 0 0
+    }
+    footer #list ul {
+        margin: 10% 0 0 8%
+    }
+    footer #Unorder ul {
+        margin: -45% 0 0 65%
+    }
+    footer form input[type=Email] {
+        margin: 10% 0 10% 22%
+    }
+    footer form input[type=image] {
+        margin: 4% 0 0 -10%
+    }
+    footer #icon {
+        margin: 10% 0 0 29%
+    }
+}
+
+@media only screen and (min-width:425px) {
+    .overlay a {
+        margin: 4% 0 0 0
+    }
+    .overlay .closebtn {
+        margin: 0 0 0 -5%
+    }
+    header form input {
+        margin: 10% 0 0 27%
+    }
+    header form #button {
+        margin: 5% 0 10% 37%
+    }
+    #whitebox div h5 {
+        margin: 2% 0 0 2%
+    }
+    #whitebox div h6 {
+        margin: -5% 0 0 75%
+    }
+    #middle h2 {
+        margin: 20% 0 0 0
+    }
+    #contact div {
+        margin: 5% 0 0 0
+    }
+    #contact div img {
+        margin: 5% 0 0 32%
+    }
+    #contact div p {
+        margin: 5% 0 0 0
+    }
+    #contact div h6 {
+        margin: 4% 0 10% 0
+    }
+    footer #list ul {
+        margin: 10% 0 0 12%
+    }
+    footer #Unorder ul {
+        margin: -40% 0 0 65%
+    }
+    footer form input[type=Email] {
+        margin: 10% 0 10% 26%
+    }
+    footer #icon {
+        margin: 10% 0 0 32%
+    }
+}
+
+@media only screen and (min-width:768px) {
+    header h1 {
+        margin: 5% 0 -7% 8%;
+        font-size: 4em
+    }
+    header p {
+        margin: 6% 0 -8% 9%
+    }
+    .overlay a {
+        margin: 2% 0 0 0
+    }
+    .overlay .closebtn {
+        margin: -1% 0 0 -5%
+    }
+    header h2 {
+        margin: 20% 0 0 0
+    }
+    header h3 {
+        margin: 2% 0 0 0
+    }
+    header form input {
+        margin: 5% 0 0 28%
+    }
+    header form #button {
+        margin: 0 0 10% 0
+    }
+    main #whitebox div {
+        width: 80%;
+        margin: 10% 0 0 19%
+    }
+    #whitebox div img {
+        width: 80%;
+        margin: 0
+    }
+    #whitebox div h5 {
+        margin: 2% 0 0 2%
+    }
+    #whitebox div h6 {
+        margin: -4% 0 0 63%
+    }
+    #middle h2 {
+        margin: 10% 0 0 0
+    }
+    #middle article p {
+        width: 80%;
+        text-align: center;
+        margin: 5% 0 0 10%
+    }
+    #slider img {
+        height: 28em
+    }
+    .dot {
+        margin: -5% 0 10% 0
+    }
+    #greybox h2 {
+        margin: 10% 0 0 0
+    }
+    #greybox p {
+        margin: 5% 0 0 0
+    }
+    #greybox div {
+        width: 70%;
+        height: 30em;
+        margin: 10% 0 0 15%
+    }
+    #greybox div img {
+        width: 100%;
+        height: 20em
+    }
+    #contact h2 {
+        margin: 10% 0 0 0
+    }
+    #contact div {
+        width: 50%;
+        margin: 5% 0 0 26%
+    }
+    #contact div img {
+        margin: 10% 0 0 30%
+    }
+    footer #list ul {
+        margin: 10% 0 0 10%
+    }
+    footer #list ul li {
+        margin: 5% 0 0 0
+    }
+    footer #Unorder ul {
+        margin: -37% 0 0 42%
+    }
+    footer #Unorder ul li {
+        margin: 10% 0 0 0
+    }
+    footer div {
+        width: 30%;
+        margin: -40% 0 0 63%
+    }
+    footer div h3 {
+        margin: 15% 0 0 0
+    }
+    footer div p {
+        margin: 8% 0 0 0
+    }
+    footer h4 {
+        margin: 15% 0 0 0
+    }
+    footer form input[type=Email] {
+        margin: 5% 0 10% 37%
+    }
+    footer form input[type=image] {
+        margin: 4% 0 0 -5%
+    }
+    footer article p {
+        font-size: 1.2em;
+        margin: 5% 0 0 0
+    }
+    footer #icon {
+        margin: 5% 0 0 38%
+    }
+    footer h5 {
+        margin: 5% 0 5% 0
+    }
+    footer h5 span {
+        font-size: 1.3em;
+        margin: 0
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    header h1 {
+        margin: 5% 0 0 8%;
+        font-size: 4em
+    }
+    header p {
+        margin: 0 0 -6% 9%
+    }
+    .overlay a {
+        margin: 2% 0 2% 0
+    }
+    .overlay .closebtn {
+        margin: 3% 10% 0 0
+    }
+    header h2 {
+        font-size: 3em;
+        margin: 20% 0 0 0
+    }
+    header h3 {
+        font-size: 1.5em
+    }
+    header form input {
+        margin: 5% 0 0 34%
+    }
+    header form #button {
+        margin: 0 0 15% 0
+    }
+    main #whitebox h2 {
+        font-size: 2.8em
+    }
+    main #whitebox div {
+        width: 40%;
+        display: inline-block;
+        margin: 5% 0 0 6%
+    }
+    #whitebox div img {
+        margin: 0 0 0 10%
+    }
+    #whitebox div h5 {
+        margin: 2% 0 0 10%
+    }
+    #whitebox div h6 {
+        margin: -5% 0 0 65%
+    }
+    #middle h2 {
+        margin: 10% 0 0 0
+    }
+    #middle article p {
+        width: 80%;
+        text-align: center;
+        margin: 5% 0 0 10%
+    }
+    #slider {
+        width: 100%;
+        padding: 10px
+    }
+    #slider img {
+        height: 35em;
+        margin: 5% 0 0 0
+    }
+    #greybox h2 {
+        margin: 10% 0 0 0
+    }
+    #greybox p {
+        margin: 5% 0 0 10%;
+        width: 80%
+    }
+    #greybox div {
+        width: 32%;
+        height: 30em;
+        display: inline-block;
+        margin: 10% 0 0 .8%
+    }
+    #greybox div h3 {
+        font-size: 2em
+    }
+    #greybox div h4 {
+        font-size: 1.5em;
+        margin: 5% 0 0 0
+    }
+    #contact h2 {
+        font-size: 3em
+    }
+    #contact div {
+        width: 32%;
+        display: inline-block;
+        margin: 5% 0 5% .8%
+    }
+    #contact div img {
+        width: 40%;
+        height: 40%;
+        margin: 10% 0 0 28%
+    }
+    footer #list ul {
+        margin: 10% 0 0 12%
+    }
+    footer #list ul li {
+        margin: 5% 0 0 0
+    }
+    footer #Unorder ul {
+        margin: -32% 0 0 44%
+    }
+    footer #Unorder ul li {
+        margin: 8% 0 0 0
+    }
+    footer div {
+        width: 30%;
+        margin: -33% 0 0 65%
+    }
+    footer div h3 {
+        margin: 15% 0 0 0
+    }
+    footer div p {
+        margin: 8% 0 0 0
+    }
+    footer h4 {
+        margin: 15% 0 0 0
+    }
+    footer form input[type=Email] {
+        margin: 5% 0 10% 40%
+    }
+    footer form input[type=image] {
+        margin: 4% 0 0 -4%
+    }
+    footer article p {
+        font-size: 1.2em;
+        margin: 5% 0 0 0
+    }
+    footer #icon {
+        margin: 3% 0 0 38%
+    }
+    footer h5 {
+        margin: 3% 0 5% 0
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    header h1 {
+        margin: 5% 0 0 8%;
+        font-size: 5em
+    }
+    header p {
+        margin: 0 0 -6% 9%;
+        font-size: 1.5em
+    }
+    .overlay a {
+        margin: 2% 0 0 0
+    }
+    .overlay .closebtn {
+        margin: 2% 10% 0 10%
+    }
+    header h2 {
+        font-size: 4em;
+        margin: 20% 0 0 0
+    }
+    header h3 {
+        font-size: 1.9em
+    }
+    header form input {
+        margin: 5% 0 0 32%;
+        font-size: 1.5em
+    }
+    main #whitebox h2 {
+        font-size: 4em
+    }
+    main #whitebox div {
+        width: 40%;
+        height: 70%;
+        display: inline-block;
+        margin: 5% 0 5% 7%
+    }
+    #whitebox div img {
+        margin: 0 0 0 3%;
+        width: 95%;
+        height: 95%
+    }
+    #whitebox div h5 {
+        margin: 3% 0 0 3%;
+        font-size: 1.5em
+    }
+    #whitebox div h6 {
+        margin: -5% 0 0 73%;
+        font-size: 1.9em
+    }
+    #middle h2 {
+        margin: 5% 0 0 0;
+        font-size: 3em
+    }
+    #middle article p {
+        width: 60%;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 5% 0 0 20%
+    }
+    #slider img {
+        height: 50em;
+        margin: 5% 0 0 0
+    }
+    .overlay a {
+        font-size: 2em
+    }
+    .overlay .closebtn {
+        font-size: 5em
+    }
+    .dot {
+        width: 1.5em;
+        height: 1.5em
+    }
+    #greybox h2 {
+        margin: 5% 0 0 0;
+        font-size: 3em
+    }
+    #greybox p {
+        margin: 5% 0 0 15%;
+        width: 70%;
+        font-size: 1.5em
+    }
+    #greybox div {
+        width: 32%;
+        height: 30em;
+        display: inline-block;
+        margin: 5% 0 5% .8%
+    }
+    #contact h2 {
+        margin: 5% 0 0 0;
+        font-size: 2.8em
+    }
+    #contact div {
+        width: 32%;
+        display: inline-block;
+        margin: 4% 0 5% .8%
+    }
+    #contact div img {
+        width: 15em;
+        height: 15em;
+        margin: 10% 0 0 26%
+    }
+    #contact div p {
+        margin: 10% 0 0 0;
+        font-size: 1.4em
+    }
+    #contact div h6 {
+        font-size: 1.5em
+    }
+    footer #list ul {
+        margin: 10% 0 0 12%;
+        font-size: 1.5em
+    }
+    footer #list ul li {
+        margin: 5% 0 0 0
+    }
+    footer #Unorder ul {
+        margin: -32% 0 0 44%;
+        font-size: 1.5em
+    }
+    footer #Unorder ul li {
+        margin: 8% 0 0 0
+    }
+    footer div {
+        width: 30%;
+        margin: -33% 0 0 65%
+    }
+    footer div h3 {
+        margin: 15% 0 0 0;
+        font-size: 1.5em
+    }
+    footer div p {
+        margin: 8% 0 0 0;
+        font-size: 1.5em
+    }
+    footer h4 {
+        margin: 15% 0 0 0;
+        font-size: 1.5em
+    }
+    footer form input[type=Email] {
+        margin: 5% 0 10% 38%;
+        font-size: 1.5em
+    }
+    footer form input[type=image] {
+        margin: 4% 0 0 -4%;
+        width: 4%;
+        height: 4%
+    }
+    footer article p {
+        font-size: 1.5em;
+        margin: 5% 0 0 0
+    }
+    footer #icon {
+        margin: 3% 0 0 40%
+    }
+    footer ul li img {
+        width: 40px;
+        height: 40px
+    }
+    footer h5 {
+        margin: 2% 0 5% 0;
+        font-size: 1.5em
+    }
+}
